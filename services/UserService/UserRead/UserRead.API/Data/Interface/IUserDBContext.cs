@@ -1,7 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 using UserShared.Lib.Models;
 
-namespace UserWrite.API.Data.Interface
+namespace UserRead.API.Data.Interface
 {
     public interface IUserDBContext
     {
