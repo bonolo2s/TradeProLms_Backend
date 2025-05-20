@@ -28,7 +28,5 @@ This is a **learning-oriented** backend project with the following goals:
 | Communication   | REST APIs                        |
 | DevOps & Cloud  | (Planned: Docker, Azure, GitHub Actions) |
 
----
 
-## 📁 Project Structure
 
