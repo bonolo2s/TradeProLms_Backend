@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|c:\\users\\thato\\documents\\personal projects\\tradeprolms-backend\\tradeprolms\\services\\userservice\\userwrite\\userwrite.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|solutionrelative:services\\userservice\\userwrite\\userwrite.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|c:\\users\\thato\\documents\\personal projects\\tradeprolms-backend\\tradeprolms\\services\\userservice\\userwrite\\userwrite.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|solutionrelative:services\\userservice\\userwrite\\userwrite.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +18,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Program.cs",
+              "RelativeDocumentMoniker": "services\\UserService\\UserWrite\\UserWrite.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Program.cs",
+              "RelativeToolTip": "services\\UserService\\UserWrite\\UserWrite.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T12:49:57.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\appsettings.json",
+              "RelativeDocumentMoniker": "services\\UserService\\UserWrite\\UserWrite.API\\appsettings.json",
+              "ToolTip": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\appsettings.json",
+              "RelativeToolTip": "services\\UserService\\UserWrite\\UserWrite.API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-20T12:48:59.232Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
