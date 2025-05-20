@@ -10,7 +10,7 @@ namespace UserShared.Lib.Models
 
         [Required]
         [MaxLength(50)]
-        public string Username { get; set; }
+        public string Username { get; set; } // unique identifies in UI , ill do cathing to check if username already taken or not.
 
         [Required]
         [MaxLength(100)]

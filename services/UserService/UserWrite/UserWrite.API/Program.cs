@@ -13,6 +13,14 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// SEED DB
+using (var scope = app.Services.CreateScope())
+{
+    var db = scope.ServiceProvider.GetRequiredService<UserDBContext>();
+    db.Database.EnsureCreated(); // Ensures DB and tables exist
+    UserSeeder.Seed(db);
+}
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
