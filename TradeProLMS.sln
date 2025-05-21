@@ -31,6 +31,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassSessionsWrite.API", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserShared.Lib", "Common\UserShared.Lib\UserShared.Lib.csproj", "{C4D46573-7F8C-42E7-813F-524AEC3B4154}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GlobalShared.Lib", "Common\GlobalShared.Lib\GlobalShared.Lib.csproj", "{4B087B62-6150-4831-AFA6-7BA63E617423}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{C4D46573-7F8C-42E7-813F-524AEC3B4154}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4D46573-7F8C-42E7-813F-524AEC3B4154}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4D46573-7F8C-42E7-813F-524AEC3B4154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B087B62-6150-4831-AFA6-7BA63E617423}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B087B62-6150-4831-AFA6-7BA63E617423}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B087B62-6150-4831-AFA6-7BA63E617423}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B087B62-6150-4831-AFA6-7BA63E617423}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +79,7 @@ Global
 		{A384B70B-2106-4E92-9614-57494BE75336} = {046B727E-0ED1-406F-A7D1-295BAD4F3018}
 		{353AB199-39A0-4021-996B-C29A88FD8754} = {1D21FC8B-5C9E-48DE-9391-D4261D03AE60}
 		{C4D46573-7F8C-42E7-813F-524AEC3B4154} = {87849FCC-2ECC-4E01-85B4-197012449A37}
+		{4B087B62-6150-4831-AFA6-7BA63E617423} = {87849FCC-2ECC-4E01-85B4-197012449A37}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E0CED85D-A7C4-4E8A-9B39-1F298DAFFC5D}
