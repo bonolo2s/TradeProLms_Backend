@@ -870,6 +870,16 @@
           }
         }
       },
+      "GlobalShared.Lib/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/GlobalShared.Lib.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GlobalShared.Lib.dll": {}
+        }
+      },
       "UserShared.Lib/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2555,6 +2565,11 @@
         "version.txt"
       ]
     },
+    "GlobalShared.Lib/1.0.0": {
+      "type": "project",
+      "path": "../../../../Common/GlobalShared.Lib/GlobalShared.Lib.csproj",
+      "msbuildProject": "../../../../Common/GlobalShared.Lib/GlobalShared.Lib.csproj"
+    },
     "UserShared.Lib/1.0.0": {
       "type": "project",
       "path": "../../../../Common/UserShared.Lib/UserShared.Lib.csproj",
@@ -2563,6 +2578,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "GlobalShared.Lib >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.36",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.36",
       "Microsoft.EntityFrameworkCore.Tools >= 6.0.36",
@@ -2604,6 +2620,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\Common\\GlobalShared.Lib\\GlobalShared.Lib.csproj": {
+              "projectPath": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\Common\\GlobalShared.Lib\\GlobalShared.Lib.csproj"
+            },
             "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\Common\\UserShared.Lib\\UserShared.Lib.csproj": {
               "projectPath": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\Common\\UserShared.Lib\\UserShared.Lib.csproj"
             }

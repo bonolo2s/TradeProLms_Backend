@@ -8,4 +8,3 @@
         public bool Error { get; set; }
     }
 }
-}

@@ -21,11 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Common\GlobalShared.Lib\GlobalShared.Lib.csproj" />
     <ProjectReference Include="..\..\..\..\Common\UserShared.Lib\UserShared.Lib.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
