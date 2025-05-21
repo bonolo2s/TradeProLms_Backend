@@ -17,109 +17,107 @@ namespace UserRead.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [ProducesResponseType(typeof(IResponseModel<User>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(IResponseModel<User>), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(IResponseModel<User>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(IResponseModel<User>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<IResponseModel<User>>> GetUserById(Guid id)
         {
-            if (id == Guid.Empty)
+            try
             {
-                return BadRequest(new IResponseModel<User>
+                if (id == Guid.Empty)
                 {
-                    Error = true,
-                    Message = "Invalid user ID."
-                });
-            }
+                    return BadRequest(new IResponseModel<User> { Error = true, Message = "Invalid user ID." });
+                }
 
-            var user = await _userReadRepository.GetUserByIdAsync(id);
+                var user = await _userReadRepository.GetUserByIdAsync(id);
 
-            if (user == null)
-            {
-                return NotFound(new IResponseModel<User>
+                if (user == null)
                 {
-                    Error = true,
-                    Message = "User not found."
-                });
-            }
+                    return NotFound(new IResponseModel<User> { Error = true, Message = "User not found." });
+                }
 
-            return Ok(new IResponseModel<User>
+                return Ok(new IResponseModel<User> { Data = user, Error = false, Message = "User retrieved successfully." });
+            }
+            catch (Exception ex)
             {
-                Data = user,
-                Error = false,
-                Message = "User retrieved successfully."
-            });
+                return StatusCode(500, new IResponseModel<User> { Error = true, Message = $"Server error: {ex.Message}" });
+            }
         }
 
         [HttpGet("by-username/{username}")]
+        [ProducesResponseType(typeof(IResponseModel<User>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(IResponseModel<User>), StatusCodes.Status404NotFound)]
+        [ProducesResponseType(typeof(IResponseModel<User>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(IResponseModel<User>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<IResponseModel<User>>> GetUserByUsername(string username)
         {
-            if (string.IsNullOrWhiteSpace(username))
+            try
             {
-                return BadRequest(new IResponseModel<User>
+                if (string.IsNullOrWhiteSpace(username))
                 {
-                    Error = true,
-                    Message = "Username is required."
-                });
-            }
+                    return BadRequest(new IResponseModel<User> { Error = true, Message = "Username is required." });
+                }
 
-            var user = await _userReadRepository.GetUserByUsernameAsync(username);
+                var user = await _userReadRepository.GetUserByUsernameAsync(username);
 
-            if (user == null)
-            {
-                return NotFound(new IResponseModel<User>
+                if (user == null)
                 {
-                    Error = true,
-                    Message = "User not found."
-                });
-            }
+                    return NotFound(new IResponseModel<User> { Error = true, Message = "User not found." });
+                }
 
-            return Ok(new IResponseModel<User>
+                return Ok(new IResponseModel<User> { Data = user, Error = false, Message = "User found." });
+            }
+            catch (Exception ex)
             {
-                Data = user,
-                Error = false,
-                Message = "User found."
-            });
+                return StatusCode(500, new IResponseModel<User> { Error = true, Message = $"Server error: {ex.Message}" });
+            }
         }
 
         [HttpGet("all")]
+        [ProducesResponseType(typeof(IResponseModel<IEnumerable<User>>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(IResponseModel<IEnumerable<User>>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(IResponseModel<IEnumerable<User>>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<IResponseModel<IEnumerable<User>>>> GetAllUsers([FromQuery] int pageNumber = 1, [FromQuery] int pageSize = 20)
         {
-            if (pageNumber <= 0 || pageSize <= 0)
+            try
             {
-                return BadRequest(new IResponseModel<IEnumerable<User>>
+                if (pageNumber <= 0 || pageSize <= 0)
                 {
-                    Error = true,
-                    Message = "Invalid pagination values."
-                });
+                    return BadRequest(new IResponseModel<IEnumerable<User>> { Error = true, Message = "Invalid pagination values." });
+                }
+
+                var users = await _userReadRepository.GetAllUsersAsync(pageNumber, pageSize);
+
+                return Ok(new IResponseModel<IEnumerable<User>> { Data = users, Error = false, Message = "Users fetched successfully." });
             }
-
-            var users = await _userReadRepository.GetAllUsersAsync(pageNumber, pageSize);
-
-            return Ok(new IResponseModel<IEnumerable<User>>
+            catch (Exception ex)
             {
-                Data = users,
-                Error = false,
-                Message = "Users fetched successfully."
-            });
+                return StatusCode(500, new IResponseModel<IEnumerable<User>> { Error = true, Message = $"Server error: {ex.Message}" });
+            }
         }
 
         [HttpGet("exists")]
+        [ProducesResponseType(typeof(IResponseModel<bool>), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(IResponseModel<bool>), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(IResponseModel<bool>), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<IResponseModel<bool>>> UserExists([FromQuery] string username, [FromQuery] string email)
         {
-            if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(email))
+            try
             {
-                return BadRequest(new IResponseModel<bool>
+                if (string.IsNullOrWhiteSpace(username) || string.IsNullOrWhiteSpace(email))
                 {
-                    Error = true,
-                    Message = "Username and email are required."
-                });
+                    return BadRequest(new IResponseModel<bool> { Error = true, Message = "Username and email are required." });
+                }
+
+                var exists = await _userReadRepository.UserExistsAsync(username, email);
+
+                return Ok(new IResponseModel<bool> { Data = exists, Error = false, Message = exists ? "User exists." : "User does not exist." });
             }
-
-            var exists = await _userReadRepository.UserExistsAsync(username, email);
-
-            return Ok(new IResponseModel<bool>
+            catch (Exception ex)
             {
-                Data = exists,
-                Error = false,
-                Message = exists ? "User exists." : "User does not exist."
-            });
+                return StatusCode(500, new IResponseModel<bool> { Error = true, Message = $"Server error: {ex.Message}" });
+            }
         }
     }
 }
