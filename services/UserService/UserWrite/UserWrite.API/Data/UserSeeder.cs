@@ -4,18 +4,23 @@ namespace UserWrite.API.Data
 {
     public static class UserSeeder
     {
-        public static void Seed(UserDBContext context)
+        public static List<User> Seed(UserDBContext context)
         {
             if (!context.Users.Any())
             {
-                context.Users.AddRange(new List<User>
+                var users = new List<User>
                 {
                     new User { Id = Guid.NewGuid(), Username = "Alice", Email = "alice@example.com", PasswordHash = "hashed-password" },
                     new User { Id = Guid.NewGuid(), Username = "Bob", Email = "bob@example.com", PasswordHash = "hashed-password" },
-                });
+                };
 
+                context.Users.AddRange(users);
                 context.SaveChanges();
+
+                return users;
             }
+
+            return context.Users.ToList();
         }
     }
 }

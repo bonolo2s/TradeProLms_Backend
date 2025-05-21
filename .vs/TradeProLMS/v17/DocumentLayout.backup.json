@@ -3,8 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|c:\\users\\thato\\documents\\personal projects\\tradeprolms-backend\\tradeprolms\\services\\userservice\\userwrite\\userwrite.api\\data\\userseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|solutionrelative:services\\userservice\\userwrite\\userwrite.api\\data\\userseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Users/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|c:\\users\\thato\\documents\\personal projects\\tradeprolms-backend\\tradeprolms\\services\\userservice\\userwrite\\userwrite.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,6 +12,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{C4D46573-7F8C-42E7-813F-524AEC3B4154}|Common\\UserShared.Lib\\UserShared.Lib.csproj|c:\\users\\thato\\documents\\personal projects\\tradeprolms-backend\\tradeprolms\\common\\usershared.lib\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C4D46573-7F8C-42E7-813F-524AEC3B4154}|Common\\UserShared.Lib\\UserShared.Lib.csproj|solutionrelative:common\\usershared.lib\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|c:\\users\\thato\\documents\\personal projects\\tradeprolms-backend\\tradeprolms\\services\\userservice\\userwrite\\userwrite.api\\data\\userseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|solutionrelative:services\\userservice\\userwrite\\userwrite.api\\data\\userseeder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +25,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,26 +49,36 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dbo.Users [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Users/True/SqlTable/dbo.Users.sql",
+              "ToolTip": "dbo.Users [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-05-20T16:34:18.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\Common\\UserShared.Lib\\Models\\User.cs",
               "RelativeDocumentMoniker": "Common\\UserShared.Lib\\Models\\User.cs",
               "ToolTip": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\Common\\UserShared.Lib\\Models\\User.cs",
               "RelativeToolTip": "Common\\UserShared.Lib\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAwAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T15:30:51.286Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "UserSeeder.cs",
               "DocumentMoniker": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Data\\UserSeeder.cs",
               "RelativeDocumentMoniker": "services\\UserService\\UserWrite\\UserWrite.API\\Data\\UserSeeder.cs",
               "ToolTip": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Data\\UserSeeder.cs",
               "RelativeToolTip": "services\\UserService\\UserWrite\\UserWrite.API\\Data\\UserSeeder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T15:27:22.997Z",
               "EditorCaption": ""

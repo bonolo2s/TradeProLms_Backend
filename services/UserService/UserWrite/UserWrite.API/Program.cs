@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using UserShared.Lib.Models;
 using UserWrite.API.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,7 +19,9 @@ using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<UserDBContext>();
     db.Database.EnsureCreated(); // Ensures DB and tables exist
-    UserSeeder.Seed(db);
+    List<User> seededUsers = UserSeeder.Seed(db);
+
+    ProfileSeeder.Seed(db, seededUsers);
 }
 
 // Configure the HTTP request pipeline.
