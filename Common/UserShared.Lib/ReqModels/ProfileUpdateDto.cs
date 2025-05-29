@@ -1,28 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace UserShared.Lib.ReqModels
 {
     public class ProfileUpdateDto
     {
         [Required]
-        public Guid UserId { get; set; } // ill look up the profile
+        public Guid UserId { get; set; }
 
         [MaxLength(100)]
-        public string FirstName { get; set; }
+        public string? FirstName { get; set; }
 
         [MaxLength(100)]
-        public string LastName { get; set; }
+        public string? LastName { get; set; }
+
+        [MaxLength(20)]
+        public string? PhoneNumber { get; set; }
 
         [MaxLength(500)]
-        public string Bio { get; set; }
+        public string? Bio { get; set; }
 
         [MaxLength(255)]
-        public string ProfilePictureUrl { get; set; }
+        public string? ProfilePictureUrl { get; set; }
     }
-
 }

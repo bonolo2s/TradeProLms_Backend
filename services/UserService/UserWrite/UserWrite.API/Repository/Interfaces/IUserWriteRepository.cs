@@ -10,7 +10,7 @@ namespace UserWrite.API.Repository.Interfaces
         Task<User> RegisterUserAsync(RegisterUserDto userRegistration);
         Task<UserLoginResultDto> LoginAsync(UserLoginDto login);
         Task<UpdateUserResponseDto> UpdateUserAsync();
-        Task DeleteUserAsync(Guid userId);
+        Task<object> DeleteUserAsync(Guid userId);
         Task RequestPasswordResetAsync(string email);
         Task ResetPasswordAsync(PasswordResetDto reset);
     }

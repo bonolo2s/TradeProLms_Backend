@@ -1,23 +1,69 @@
-﻿using UserShared.Lib.ReqModels;
+﻿using Microsoft.EntityFrameworkCore;
+using UserShared.Lib.Models;
+using UserShared.Lib.ReqModels;
+using UserWrite.API.Data;
 using UserWrite.API.Repository.Interfaces;
 
 namespace UserWrite.API.Repository
 {
     public class ProfileWriteRepository : IProfileWriteRepository
     {
-        public Task CreateProfileAsync(ProfileCreateDto profile)
+        private readonly UserDBContext _context;
+
+        public ProfileWriteRepository(UserDBContext context)
         {
-            throw new NotImplementedException();
+            _context = context;
         }
 
-        public Task DeleteProfileAsync(Guid userId)
+        public async Task<Profile> CreateProfileAsync(ProfileCreateDto dto)
         {
-            throw new NotImplementedException();
+            var profile = new Profile
+            {
+                UserId = dto.UserId,
+                FirstName = dto.FirstName,
+                LastName = dto.LastName,
+                PhoneNumber = dto.PhoneNumber,
+                DateOfBirth = dto.DateOfBirth,
+                Bio = dto.Bio,
+                ProfilePictureUrl = dto.ProfilePictureUrl
+            };
+
+            _context.Profiles.Add(profile);
+            await _context.SaveChangesAsync();
+
+            return profile;
         }
 
-        public Task UpdateProfileAsync(ProfileUpdateDto update)
+
+        public async Task<Profile> UpdateProfileAsync(ProfileUpdateDto dto)
         {
-            throw new NotImplementedException();
+            var profile = await _context.Profiles.FirstOrDefaultAsync(p => p.UserId == dto.UserId);
+            if (profile == null)
+            {
+                throw new Exception("Profile not found.");
+            }
+
+            profile.FirstName = dto.FirstName ?? profile.FirstName;
+            profile.LastName = dto.LastName ?? profile.LastName;
+            profile.PhoneNumber = dto.PhoneNumber ?? profile.PhoneNumber;
+            profile.Bio = dto.Bio ?? profile.Bio;
+            profile.ProfilePictureUrl = dto.ProfilePictureUrl ?? profile.ProfilePictureUrl;
+
+            await _context.SaveChangesAsync();
+
+            return profile;
+        }
+
+        public async Task DeleteProfileAsync(Guid userId)
+        {
+            var profile = await _context.Profiles.FirstOrDefaultAsync(p => p.UserId == userId);
+            if (profile == null)
+            {
+                throw new Exception("Profile not found.");
+            }
+
+            _context.Profiles.Remove(profile);
+            await _context.SaveChangesAsync();
         }
     }
 }

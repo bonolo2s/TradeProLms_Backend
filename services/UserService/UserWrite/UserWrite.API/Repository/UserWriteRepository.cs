@@ -17,10 +17,35 @@ namespace UserWrite.API.Repository
             _context = context;
         }
 
-        public Task DeleteUserAsync(Guid userId)
+        public async Task<object> DeleteUserAsync(Guid userId)
         {
-            throw new NotImplementedException();
+            var user = await _context.Users.FindAsync(userId);
+            if (user == null)
+            {
+                throw new Exception("User not found");
+            }
+
+            var profile = await _context.Profiles.FirstOrDefaultAsync(p => p.UserId == userId);
+            bool profileDeleted = false;
+
+            if (profile != null)
+            {
+                _context.Profiles.Remove(profile);
+                profileDeleted = true;
+            }
+
+            _context.Users.Remove(user);
+            await _context.SaveChangesAsync();
+
+            //My anonymos obj with debug info
+            return new
+            {
+                Message = "User and profile deleted successfully.",
+                UserId = userId,
+                ProfileDeleted = profileDeleted
+            };
         }
+
 
         public async Task<UserLoginResultDto> LoginAsync(UserLoginDto login)
         {
