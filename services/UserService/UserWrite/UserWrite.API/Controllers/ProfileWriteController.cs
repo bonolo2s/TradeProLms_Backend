@@ -6,11 +6,13 @@ using UserShared.Lib.ReqModels;
 using UserWrite.API.Repository.Interfaces;
 using UserShared.Lib.Models;
 using GlobalShared.Lib.BaseResponseModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace UserWrite.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProfileWriteController : ControllerBase
     {
         private readonly IProfileWriteRepository _profileWriteRepository;

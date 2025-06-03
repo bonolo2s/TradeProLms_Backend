@@ -3,34 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C4D46573-7F8C-42E7-813F-524AEC3B4154}|Common\\UserShared.Lib\\UserShared.Lib.csproj|c:\\users\\thato\\documents\\personal projects\\tradeprolms-backend\\tradeprolms\\common\\usershared.lib\\reqmodels\\profileupdatedto.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{C4D46573-7F8C-42E7-813F-524AEC3B4154}|Common\\UserShared.Lib\\UserShared.Lib.csproj|solutionrelative:common\\usershared.lib\\reqmodels\\profileupdatedto.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|c:\\users\\thato\\documents\\personal projects\\tradeprolms-backend\\tradeprolms\\services\\userservice\\userwrite\\userwrite.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|solutionrelative:services\\userservice\\userwrite\\userwrite.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|c:\\users\\thato\\documents\\personal projects\\tradeprolms-backend\\tradeprolms\\services\\userservice\\userwrite\\userwrite.api\\controllers\\profilewritecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|solutionrelative:services\\userservice\\userwrite\\userwrite.api\\controllers\\profilewritecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|c:\\users\\thato\\documents\\personal projects\\tradeprolms-backend\\tradeprolms\\services\\userservice\\userwrite\\userwrite.api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|solutionrelative:services\\userservice\\userwrite\\userwrite.api\\services\\jwttokenservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Users/True/SqlTable/dbo.Profiles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|c:\\users\\thato\\documents\\personal projects\\tradeprolms-backend\\tradeprolms\\services\\userservice\\userwrite\\userwrite.api\\repository\\profilewriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|solutionrelative:services\\userservice\\userwrite\\userwrite.api\\repository\\profilewriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|c:\\users\\thato\\documents\\personal projects\\tradeprolms-backend\\tradeprolms\\services\\userservice\\userwrite\\userwrite.api\\repository\\interfaces\\iprofilewriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|solutionrelative:services\\userservice\\userwrite\\userwrite.api\\repository\\interfaces\\iprofilewriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C4D46573-7F8C-42E7-813F-524AEC3B4154}|Common\\UserShared.Lib\\UserShared.Lib.csproj|c:\\users\\thato\\documents\\personal projects\\tradeprolms-backend\\tradeprolms\\common\\usershared.lib\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C4D46573-7F8C-42E7-813F-524AEC3B4154}|Common\\UserShared.Lib\\UserShared.Lib.csproj|solutionrelative:common\\usershared.lib\\settings\\jwtsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Users/True/SqlTable/dbo.Users.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|c:\\users\\thato\\documents\\personal projects\\tradeprolms-backend\\tradeprolms\\services\\userservice\\userwrite\\userwrite.api\\repository\\interfaces\\iuserwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|solutionrelative:services\\userservice\\userwrite\\userwrite.api\\repository\\interfaces\\iuserwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|c:\\users\\thato\\documents\\personal projects\\tradeprolms-backend\\tradeprolms\\services\\userservice\\userwrite\\userwrite.api\\repository\\userwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{08718C09-A023-466A-B91A-41002145B830}|services\\UserService\\UserWrite\\UserWrite.API\\UserWrite.API.csproj|solutionrelative:services\\userservice\\userwrite\\userwrite.api\\repository\\userwriterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Users/True/SqlTable/dbo.Profiles.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,27 +28,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "dbo.Profiles [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Users/True/SqlTable/dbo.Profiles.sql",
               "ToolTip": "dbo.Profiles [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-29T18:34:16.53Z",
+              "WhenOpened": "2025-06-02T14:22:05.002Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "dbo.Users [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Users/True/SqlTable/dbo.Users.sql",
               "ToolTip": "dbo.Users [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-05-29T17:06:18.217Z",
+              "WhenOpened": "2025-06-02T14:22:07.107Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "JwtTokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Services\\JwtTokenService.cs",
+              "RelativeDocumentMoniker": "services\\UserService\\UserWrite\\UserWrite.API\\Services\\JwtTokenService.cs",
+              "ToolTip": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Services\\JwtTokenService.cs",
+              "RelativeToolTip": "services\\UserService\\UserWrite\\UserWrite.API\\Services\\JwtTokenService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T14:42:39.403Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -87,79 +89,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ProfileUpdateDto.cs",
-              "DocumentMoniker": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\Common\\UserShared.Lib\\ReqModels\\ProfileUpdateDto.cs",
-              "RelativeDocumentMoniker": "Common\\UserShared.Lib\\ReqModels\\ProfileUpdateDto.cs",
-              "ToolTip": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\Common\\UserShared.Lib\\ReqModels\\ProfileUpdateDto.cs",
-              "RelativeToolTip": "Common\\UserShared.Lib\\ReqModels\\ProfileUpdateDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Program.cs",
+              "RelativeDocumentMoniker": "services\\UserService\\UserWrite\\UserWrite.API\\Program.cs",
+              "ToolTip": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Program.cs",
+              "RelativeToolTip": "services\\UserService\\UserWrite\\UserWrite.API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T18:41:39.266Z",
+              "WhenOpened": "2025-06-02T14:55:51.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProfileWriteController.cs",
-              "DocumentMoniker": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Controllers\\ProfileWriteController.cs",
-              "RelativeDocumentMoniker": "services\\UserService\\UserWrite\\UserWrite.API\\Controllers\\ProfileWriteController.cs",
-              "ToolTip": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Controllers\\ProfileWriteController.cs",
-              "RelativeToolTip": "services\\UserService\\UserWrite\\UserWrite.API\\Controllers\\ProfileWriteController.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowD0AAABjAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "JwtSettings.cs",
+              "DocumentMoniker": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\Common\\UserShared.Lib\\Settings\\JwtSettings.cs",
+              "RelativeDocumentMoniker": "Common\\UserShared.Lib\\Settings\\JwtSettings.cs",
+              "ToolTip": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\Common\\UserShared.Lib\\Settings\\JwtSettings.cs",
+              "RelativeToolTip": "Common\\UserShared.Lib\\Settings\\JwtSettings.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T18:27:01.486Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IUserWriteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Repository\\Interfaces\\IUserWriteRepository.cs",
-              "RelativeDocumentMoniker": "services\\UserService\\UserWrite\\UserWrite.API\\Repository\\Interfaces\\IUserWriteRepository.cs",
-              "ToolTip": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Repository\\Interfaces\\IUserWriteRepository.cs",
-              "RelativeToolTip": "services\\UserService\\UserWrite\\UserWrite.API\\Repository\\Interfaces\\IUserWriteRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T18:25:51.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserWriteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Repository\\UserWriteRepository.cs",
-              "RelativeDocumentMoniker": "services\\UserService\\UserWrite\\UserWrite.API\\Repository\\UserWriteRepository.cs",
-              "ToolTip": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Repository\\UserWriteRepository.cs",
-              "RelativeToolTip": "services\\UserService\\UserWrite\\UserWrite.API\\Repository\\UserWriteRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACQAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T18:16:21.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IProfileWriteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Repository\\Interfaces\\IProfileWriteRepository.cs",
-              "RelativeDocumentMoniker": "services\\UserService\\UserWrite\\UserWrite.API\\Repository\\Interfaces\\IProfileWriteRepository.cs",
-              "ToolTip": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Repository\\Interfaces\\IProfileWriteRepository.cs",
-              "RelativeToolTip": "services\\UserService\\UserWrite\\UserWrite.API\\Repository\\Interfaces\\IProfileWriteRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T18:12:16.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ProfileWriteRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Repository\\ProfileWriteRepository.cs",
-              "RelativeDocumentMoniker": "services\\UserService\\UserWrite\\UserWrite.API\\Repository\\ProfileWriteRepository.cs",
-              "ToolTip": "C:\\Users\\Thato\\Documents\\Personal Projects\\TradeProLMS-backend\\TradeProLMS\\services\\UserService\\UserWrite\\UserWrite.API\\Repository\\ProfileWriteRepository.cs",
-              "RelativeToolTip": "services\\UserService\\UserWrite\\UserWrite.API\\Repository\\ProfileWriteRepository.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAkwCoAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T18:11:25.638Z",
+              "WhenOpened": "2025-06-02T15:09:11.204Z",
               "EditorCaption": ""
             }
           ]

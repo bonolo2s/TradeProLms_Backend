@@ -5,16 +5,19 @@ using UserShared.Lib.ReqModels;
 using UserShared.Lib.ResModels;
 using UserWrite.API.Data;
 using UserWrite.API.Repository.Interfaces;
+using UserWrite.API.Services.Interfaces;
 
 namespace UserWrite.API.Repository
 {
     public class UserWriteRepository : IUserWriteRepository
     {
         private readonly UserDBContext _context;
+        private readonly IJwtTokenService _jwtTokenService;
 
-        public UserWriteRepository(UserDBContext context)
+        public UserWriteRepository(UserDBContext context, IJwtTokenService jwtTokenService)
         {
             _context = context;
+            _jwtTokenService = jwtTokenService;
         }
 
         public async Task<object> DeleteUserAsync(Guid userId)
@@ -54,14 +57,14 @@ namespace UserWrite.API.Repository
                 .FirstOrDefaultAsync(u => u.Email == login.Email);
 
             if (user == null)
-                throw new Exception("Invalid credentials.");
+                throw new Exception("User not found.");
 
             var isPasswordValid = BCrypt.Net.BCrypt.Verify(login.Password, user.PasswordHash);
 
             if (!isPasswordValid)
                 throw new Exception("Password does not match our records for the provided email.");
 
-            var token = "mock-jwt-token";
+            var token = _jwtTokenService.GenerateToken(user.Id, user.Email);
 
             return new UserLoginResultDto
             {
