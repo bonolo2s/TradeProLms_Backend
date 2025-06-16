@@ -11,19 +11,19 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["services/UserRead/UserRead.API/UserRead.API.csproj", "services/UserRead/UserRead.API/"]
-RUN dotnet restore "./services/UserRead/UserRead.API/UserRead.API.csproj"
+COPY ["ApiGateways/GatewayAPI/GatewayAPI.csproj", "ApiGateways/GatewayAPI/"]
+RUN dotnet restore "./ApiGateways/GatewayAPI/GatewayAPI.csproj"
 COPY . .
-WORKDIR "/src/services/UserService/UserRead/UserRead.API"
-RUN dotnet build "./UserRead.API.csproj" -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR "/src/ApiGateways/GatewayAPI"
+RUN dotnet build "./GatewayAPI.csproj" -c $BUILD_CONFIGURATION -o /app/build
 
 # This stage is used to publish the service project to be copied to the final stage
 FROM build AS publish
 ARG BUILD_CONFIGURATION=Release
-RUN dotnet publish "./UserRead.API.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
+RUN dotnet publish "./GatewayAPI.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=false
 
 # This stage is used in production or when running from VS in regular mode (Default when not using the Debug configuration)
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "UserRead.API.dll"]
+ENTRYPOINT ["dotnet", "GatewayAPI.dll"]

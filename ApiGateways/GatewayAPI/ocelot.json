@@ -1,0 +1,86 @@
+{
+  "Routes": [
+    {
+      "RouteName": "UserRead_GetUserById",
+      "DownstreamPathTemplate": "/api/UserRead/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/user-read/{id}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "RouteName": "UserRead_GetUserByUsername",
+      "DownstreamPathTemplate": "/api/UserRead/by-username/{username}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/user-read/by-username/{username}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "RouteName": "UserRead_GetAllUsers",
+      "DownstreamPathTemplate": "/api/UserRead/all",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/user-read/all",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "RouteName": "UserRead_UserExists",
+      "DownstreamPathTemplate": "/api/UserRead/exists",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5001
+        }
+      ],
+      "UpstreamPathTemplate": "/user-read/exists",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+
+    {
+      "RouteName": "UserWrite_Register",
+      "DownstreamPathTemplate": "/api/UserWrite/register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/user-write/register",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "RouteName": "UserWrite_Login",
+      "DownstreamPathTemplate": "/api/UserWrite/login",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5002
+        }
+      ],
+      "UpstreamPathTemplate": "/user-write/login",
+      "UpstreamHttpMethod": [ "POST" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5000"
+  }
+}
